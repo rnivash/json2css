@@ -11,3 +11,6 @@ var jdata = {
     
 $("head").json2css(jdata);
 ```
+
+[Test json2css](https://rnivash.github.io/json2css/test.html)
+
