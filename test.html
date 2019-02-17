@@ -1,0 +1,25 @@
+<html>
+<head>
+</head>
+<body>
+<div class="box1"></div>
+<script type="text/javascript" src="jquery-3.3.1.js"></script>
+<script type="text/javascript" src="json2css.js"></script>
+<script>
+$(document).ready(function(){
+    var jdata = {
+        ".box1" : { 
+            border: "2px solid red",
+            padding: "20px",
+            width: "300px",
+            height: "300px"
+        },
+        ".box1::after" : {
+            content: "'Test Passed.'"
+        }
+    };    
+    $("head").json2css(jdata);
+});
+</script>
+</body>
+</html>
